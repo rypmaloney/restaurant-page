@@ -30,9 +30,10 @@ body {
     justify-content: center;
 }
 
-p {
+#header p, p {
     font-family: 'Comfortaa', cursive;
-    font-size: 14px
+    font-size: 14px;
+    margin: 0 auto 20px auto;
 }
 
 
@@ -97,7 +98,7 @@ p {
 .menu-title h2 {
     font-family: 'Satisfy', cursive;
     font-size: 40px;
-    color: #cc7171;
+        color: #f2ecbe;
 }
 
 .menu-item {
@@ -146,7 +147,6 @@ li:hover {
 
 .menu-item h3 {
     font-family: 'rock salt', cursive;
-    color: #f2ecbe;
     margin-top: 0;
     margin-bottom: 5px;
 }
