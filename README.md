@@ -1,2 +1,2 @@
-# restaurant-page
-Website for a restaurant dynamically rendered with JS and bundled with Webpack. 
+# Bistro Bus
+Sample website for an imagined Food Truck dynamically rendered with JS and bundled with Webpack. 

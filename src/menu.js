@@ -22,6 +22,7 @@ function makeMenuSection(name, array) {
     title.textContent = `${name}`;
     menuTitle.appendChild(title);
 
+
     for (let i = 0; i < array.length; i++) {
         let menuItem = document.createElement('div');
         menuItem.setAttribute('class', 'menu-item');
@@ -44,7 +45,7 @@ function makeMenuSection(name, array) {
 
 let sandwichArray = [{
         name: 'Just-A-Sandwich',
-        description: 'Turnkey, bacon, LTO. $7.99',
+        description: 'Turkey, bacon, LTO. $7.99',
     }, {
         name: 'Bus Burger',
         description: 'Our famous burger on wheels. two patties, special sauce, LTO. $10.99',
@@ -54,6 +55,12 @@ let sandwichArray = [{
     }, {
         name: 'Wicked Grilled Cheese',
         description: 'Meunster and avocado on brioche. $5.99'
+    }, {
+        name: 'Falafel Wrap',
+        description: 'Hummus, tabouli, tsaziki. $10.99'
+    }, {
+        name: 'Buffalo Chicken Deluxe',
+        description: 'Bacon, ranch, cheddar, LTO. $7.99'
     }
 ]
 
