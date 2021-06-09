@@ -1,5 +1,6 @@
 import createAbout from './about.js';
 import createMenu from './menu.js';
+import createContact from './contact.js';
 
 console.log('If you see me, everything is A O K');
 
@@ -30,7 +31,6 @@ function createHeader() {
         createAbout();
     });
 
-
     const menuBtn = document.createElement('li');
     menuBtn.textContent = 'Menu';
     menuBtn.addEventListener('click', () => {
@@ -40,6 +40,10 @@ function createHeader() {
 
     const contactBtn = document.createElement('li');
     contactBtn.textContent = 'Contact';
+        contactBtn.addEventListener('click', () => {
+        removeChildNodes(content);
+        createContact();
+    });
 
     navList.appendChild(aboutBtn);
     navList.appendChild(menuBtn);

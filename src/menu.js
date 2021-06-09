@@ -7,8 +7,6 @@ function createMenu() {
     makeMenuSection('Sandwiches', sandwichArray);
     makeMenuSection('Sides', sidesArray);
     makeMenuSection('Drinks', drinksArray);
-
-
 }
 
 
@@ -21,7 +19,6 @@ function makeMenuSection(name, array) {
     let title = document.createElement('h2')
     title.textContent = `${name}`;
     menuTitle.appendChild(title);
-
 
     for (let i = 0; i < array.length; i++) {
         let menuItem = document.createElement('div');
@@ -38,8 +35,6 @@ function makeMenuSection(name, array) {
         let foodDesc = document.createElement('p');
         foodDesc.textContent = `${array[i].description}`
         menuItem.append(foodDesc);
-
-
     }
 }
 
@@ -93,7 +88,6 @@ let drinksArray = [{
         description: 'Rotating local brews. $7.99'
     }
 ]
-
 
 
 export default createMenu;
