@@ -1,6 +1,8 @@
+import createAbout from './about.js';
+
 console.log('If you see me, everything is A O K')
 
-function header() {
+function createHeader() {
     const content = document.getElementById('content');
     const header = document.createElement('div');
     header.setAttribute('id', 'header');
@@ -33,4 +35,5 @@ function header() {
           
 }
 
-header()
+createHeader()
+createAbout()
