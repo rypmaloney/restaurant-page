@@ -1,4 +1,5 @@
 import createAbout from './about.js';
+import createMenu from './menu.js';
 
 console.log('If you see me, everything is A O K')
 
@@ -36,4 +37,4 @@ function createHeader() {
 }
 
 createHeader()
-createAbout()
+createMenu()
