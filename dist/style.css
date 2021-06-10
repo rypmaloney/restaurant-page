@@ -154,17 +154,3 @@ li:hover {
     margin-top: 30px;
 }
 
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(21, 20, 20, 0.79);
-    height: 100px;
-    display: flex;
-    margin: 40px auto 0 auto;
-    flex-wrap: wrap;
-
-
-}

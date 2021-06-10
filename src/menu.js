@@ -1,43 +1,3 @@
-function createMenu() {
-    const content = document.getElementById('content');
-    const menu = document.createElement('div')
-    menu.setAttribute('id', 'menu')
-    content.appendChild(menu)
-
-    makeMenuSection('Sandwiches', sandwichArray);
-    makeMenuSection('Sides', sidesArray);
-    makeMenuSection('Drinks', drinksArray);
-}
-
-
-
-function makeMenuSection(name, array) {
-    let menuTitle = document.createElement('div')
-    menuTitle.setAttribute('class', 'menu-title');
-    menu.appendChild(menuTitle);
-
-    let title = document.createElement('h2')
-    title.textContent = `${name}`;
-    menuTitle.appendChild(title);
-
-    for (let i = 0; i < array.length; i++) {
-        let menuItem = document.createElement('div');
-        menuItem.setAttribute('class', 'menu-item');
-        menu.appendChild(menuItem);
-
-        let foodName = document.createElement('h3');
-        foodName.textContent = `${array[i].name}`;
-        menuItem.appendChild(foodName);
-        
-        let hr = document.createElement('hr');
-        menuItem.appendChild(hr);
-
-        let foodDesc = document.createElement('p');
-        foodDesc.textContent = `${array[i].description}`
-        menuItem.append(foodDesc);
-    }
-}
-
 let sandwichArray = [{
         name: 'Just-A-Sandwich',
         description: 'Turkey, bacon, LTO. $7.99',
@@ -89,5 +49,42 @@ let drinksArray = [{
     }
 ]
 
+function createMenu() {
+    const content = document.getElementById('content');
+    const menu = document.createElement('div')
+    menu.setAttribute('id', 'menu')
+    content.appendChild(menu)
+
+    makeMenuSection('Sandwiches', sandwichArray);
+    makeMenuSection('Sides', sidesArray);
+    makeMenuSection('Drinks', drinksArray);
+}
+
+function makeMenuSection(name, array) {
+    let menuTitle = document.createElement('div')
+    menuTitle.setAttribute('class', 'menu-title');
+    menu.appendChild(menuTitle);
+
+    let title = document.createElement('h2')
+    title.textContent = `${name}`;
+    menuTitle.appendChild(title);
+
+    for (let i = 0; i < array.length; i++) {
+        let menuItem = document.createElement('div');
+        menuItem.setAttribute('class', 'menu-item');
+        menu.appendChild(menuItem);
+
+        let foodName = document.createElement('h3');
+        foodName.textContent = `${array[i].name}`;
+        menuItem.appendChild(foodName);
+        
+        let hr = document.createElement('hr');
+        menuItem.appendChild(hr);
+
+        let foodDesc = document.createElement('p');
+        foodDesc.textContent = `${array[i].description}`
+        menuItem.append(foodDesc);
+    }
+}
 
 export default createMenu;
